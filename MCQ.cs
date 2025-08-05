@@ -19,26 +19,27 @@ namespace Exam2
                 AnswerList = new Answer[3];
 
 
-                header = header.mcq;
+                header = "mcq question ";
 
 
 
 
-                Console.WriteLine("enter question body ");
+                Console.WriteLine("please enter question body ");
 
                 body = Console.ReadLine();
 
+                Console.WriteLine("choices ");
 
-                Console.WriteLine("enter first choice ");
+                Console.WriteLine("please enter first choice ");
 
                 AnswerList[0] = new Answer(1, Console.ReadLine());
 
 
-                Console.WriteLine("enter second choice ");
+                Console.WriteLine("please enter second choice ");
 
                 AnswerList[1] = new Answer(2, Console.ReadLine());
 
-                Console.WriteLine("enter third choice ");
+                Console.WriteLine("please enter third choice ");
 
                 AnswerList[2] = new Answer(3, Console.ReadLine());
 
@@ -49,14 +50,14 @@ namespace Exam2
 
 
                 int result;
-                Console.WriteLine("enter id of right answer");
+                Console.WriteLine("please enter id of right answer");
                 var flag = int.TryParse(Console.ReadLine(), out result);
 
                 if (flag) { right_answer_id = result; }
 
 
 
-                Console.WriteLine("enter mark");
+                Console.WriteLine("please enter mark");
                 flag = int.TryParse(Console.ReadLine(), out result);
 
                 if (flag) { mark = result; }

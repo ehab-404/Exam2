@@ -10,7 +10,10 @@ namespace Exam2
     {
         public int time { get; set; }
         public int NumberOfQuestions { get; set; }
+        public Question[] questions;
 
+        public int Grade { get; set; }
+        public int YourGrade { get; set; }
 
 
     }

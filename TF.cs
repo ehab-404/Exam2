@@ -17,17 +17,17 @@ namespace Exam2
 
                 AnswerList = new Answer[2];
 
-                 header = header.tf;
+                header = "true | false question ";
                 AnswerList[0] = new Answer(1, "true");
                 AnswerList[1] = new Answer(2, "false");
 
 
-                Console.WriteLine("enter question body ");
+                Console.WriteLine("please enter question body ");
 
                 body = Console.ReadLine();
 
                 int result;
-                Console.WriteLine("enter id of right answer  1 for true  2  for flase ");
+                Console.WriteLine("please enter id of right answer  1 for true  2  for flase ");
                 var flag = int.TryParse(Console.ReadLine(), out result);
 
                 if (flag) { right_answer_id = result; }

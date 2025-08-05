@@ -8,7 +8,7 @@ namespace Exam2
 {
     internal class Final:Exam
     {
-        Question[] questions;
+        
 
         public Final() {
 
@@ -16,13 +16,13 @@ namespace Exam2
             {
 
                 int result;
-                Console.WriteLine("enter number of minutes");
+                Console.WriteLine("Please enter the time for exam  from(30 min to 180 min )");
                 var flag = int.TryParse(Console.ReadLine(), out result);
 
                 if (flag) { time = result; }
 
 
-                Console.WriteLine("enter number of questions ");
+                Console.WriteLine("please enter the number of questions ");
                 flag = int.TryParse(Console.ReadLine(), out result);
 
                 if (flag) { NumberOfQuestions = result; }
@@ -36,7 +36,7 @@ namespace Exam2
                 for (int i = 0; i < NumberOfQuestions; i++)
                 {
 
-                    Console.WriteLine("enter type of question 1 for mcq   2 for true false ");
+                    Console.WriteLine("enter type of question ( 1 for mcq   2 for true false ) ");
 
                     flag = int.TryParse(Console.ReadLine(), out result);
 

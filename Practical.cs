@@ -10,7 +10,7 @@ namespace Exam2
     {
 
 
-        MCQ[] msqs;
+        
 
         public Practical() {
 
@@ -28,13 +28,13 @@ namespace Exam2
 
                 if (flag) { NumberOfQuestions = result; }
 
-                msqs = new MCQ[NumberOfQuestions];
+                questions = new Question[NumberOfQuestions];
 
 
 
                 for (int i = 0; i < NumberOfQuestions; i++)
                 {
-                    msqs[i] = new MCQ();
+                    questions[i] = new MCQ();
                     
 
 

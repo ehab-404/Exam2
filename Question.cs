@@ -9,7 +9,7 @@ namespace Exam2
     internal  class Question
     {
 
-        public  header header { get; set; }
+        public  string header { get; set; }
         public  string body { get; set; }
         public  int mark { get; set; }
         
